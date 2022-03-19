@@ -6,6 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Devconnect</title>
+  <!-- font awesome  -->
+  <script src="https://kit.fontawesome.com/b66e9dc93f.js" crossorigin="anonymous"></script>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -24,11 +27,11 @@
       </button>
       <div class="collapse navbar-collapse " id="devConnect">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#footer">ABOUT</a></li>
-          <li class="nav-item"> <a class="nav-link" href="#pricing">PRICING</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#cta">EVENT RENTALS</a> </li>
-          <li class="nav-item"><a class="nav-link" href="#footer">PHOTOS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#footer">BLOG</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa-solid fa-info fa-lg pe-1"></i>ABOUT</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#pricing"><i class="fa-solid fa-file-invoice-dollar pe-1"></i>PRICING</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#cta"> <i class="fa-solid fa-rectangle-list pe-1"></i>EVENT RENTALS</a> </li>
+          <li class="nav-item"><a class="nav-link" href="#footer"><i class="fa-solid fa-camera pe-1"></i>PHOTOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer"><i class="fa-brands fa-blogger fa-lg pe-1"></i>BLOG</a></li>
           <li class="nav-item"><a class="nav-link btn btn-secondary border-1  btncustomize" href="#">REQUEST A
               TOUR</a></li>
         </ul>
@@ -38,18 +41,19 @@
 
   <!-- image section  -->
   <div class="top-img">
-    <img class="img-fluid" src="images/techub2.jpeg" alt="devConnect-img" width="100%">
+    <img class="" src="images/techub2.jpeg" alt="devConnect-img" width="100%">
     <div class="text-center text-white co-working">
       <!-- <h4 class="text-light  text-white">PHOENIX' CREATIVE COMMUNITY FOR </h4>  -->
       <h2 class="text-white fs-1 fw-bold fs-1 text-light">CO-WORKING & EVENTS</h2>
-      <a class=" btn btn-secondary fs-5   btncustomize requestbtn" href="#">Request a Tour </a>
+      <a class=" btn btn-secondary fs-5   btncustomize requestbtn"  href="#" data-bs-toggle="modal" data-bs-target="#devconnectModal">Request a Tour </a>
     </div>
   </div>
+  <hr class="bg-info">
 
   <!-- work together section -->
   <div class="container px-3">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-6 mt-3">
         <h3>LET'S WORK TOGETHER</h3>
       </div>
       <div class="col-sm-6 fs-5">
@@ -58,7 +62,7 @@
         <p>Are you a new Developer looking out for mentorship ? Or do you own a firm and looking for I.T skills ? This
           is the place to be.</p>
           <div>
-        <a class="btn btn-lg px-3 mt-2 sign-me-up-btn"  data-bs-toggle="modal" data-bs-target="#devconnectModal">SIGN ME UP</a><!--tigger modal-->
+        <a class="btn btn-lg px-3 mt-2 sign-me-up-btn  et-pb-slider-arrows" data-bs-toggle="modal"  data-bs-target="#devconnectModal" >SIGN ME UP</a><!--tigger modal-->
          </div>
       </div>
     </div>
@@ -68,8 +72,8 @@
 <div class="modal fade" id="devconnectModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div class="modal-header text-white text-center bg-info ">
-        <h5 class="modal-title" id="exampleModalLabel" >Request a Tour</h5>
+      <div class="modal-header text-white  bg-info ">
+        <h5 class="modal-title " id="exampleModalLabel">Request a Tour</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -77,10 +81,10 @@
            <form >
            
             
-             <div class="row  mb-3 text-center" >
+             <div class="row  mb-3" >
                <label class="col-sm-6 col-form-label" for="tourist">Number of Tourists</label>
                <div class="col-sm-6">
-                 <select class="col-12" name="select" id="select" width="90px">
+                 <select class="col-12 p-2" name="select" id="select" width="90px">
                    <option value="select">select...</option>
                    <option value="1">1</option>
                    <option value="2">2</option>
@@ -93,25 +97,25 @@
              <div class="row mb-2">
                <label class="col-sm-6" for="date">Date</label>
                <div class="col-sm-6">
-                 <input type="date" class="form-control" name="date" id="date" placeholder="Date">
+                 <input type="date" class="form-control p-2" name="date" id="date" placeholder="Date">
                </div>
              </div>
              <div class="row mb-2">
-              <label class="col-sm-6" for="Name"><i class="fa-solid fa-address"></i>Name</label>
+              <label class="col-sm-6" for="Name"><i class="fa-solid fa-address-card"></i>Name</label>
               <div class="col-sm-6">
-                <input type="text" class="form-control" name="name" id="date" placeholder=" Name">
+                <input type="text" class="form-control p-2" name="name" id="date" placeholder=" Name">
               </div>
             </div>
             <div class="row mb-2">
               <label class="col-sm-6" id="tel" for="tel">Tel.</label>
               <div class="col-sm-6">
-                <input type="text" class="form-control" name="name" id="date" placeholder="Tel">
+                <input type="text" class="form-control p-2" name="name" id="date" placeholder="Tel">
               </div>
             </div>
             <div class="row mb-2">
               <label class="col-sm-6" for="email">Email</label>
               <div class="col-sm-6">
-                <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                <input type="text" class="form-control p-2" name="email" id="email" placeholder="Email">
               </div>
             </div>
             <div class="row">
@@ -138,9 +142,135 @@
     </div>
   </div>
 </div>
+<hr class="#membership">
+
+<div class="container">
+  <h3 class="text-center mb-3 membership" >MEMBERSHIP TYPES</h3>
+<div class="row mt-3">
+    <div class="col-md-4 col-sm-6" id="dropin">
+      <img class="img-fluid img-thumbnail" src="images/evco4.jpeg" alt="dropin-img" >
+             <h3 class="text-center pt-3">Drop In</h3>
+             <p class="text-center">Starting at $20/day</p>
+
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img class="img-fluid img-thumbnail" src="images/virtual.jpeg" alt="private-desk-img" >
+         <h3 class="text-center pt-3">Private Desk</h3>
+         <p class="text-center">Starting at $18/day</p>
+         
+
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img class="img-fluid img-thumbnail" src="images/perm.jpeg" alt="permanent-desk-img">
+      <h3 class="text-center pt-3" >Permanent Desk</h3>
+      <p class="text-center">Starting at $8.50/day</p>
+    </div>
+</div>
+
+<div class="lockable-suite " id="suites">
+  <img class="lockable-img img-fluid img-thumbnail" src="images/devco.jpeg" alt="private-img">   
+</div>
+    <div class="suites text-center fw-bold ">
+    <h1 class="">SUITES</h1>
+    <p class="">PRIVATE, LOCKABLE AND PERFECT FOR A SMALL TEAM</p>
+     </div>
+</div>
+
+
 <hr>
-<div class="col-md-8text-centere">
-  <h3>MEMBERSHIP TYPE</h3>
+
+<div class="container">
+     <div class="row pb-3">
+         <h3 class="text-center membership">BENEFITS</h3>
+        <div class="col-sm-3">
+        <img src="images/house.jpeg" alt="house-img" width="120" height="120">
+        <p>Devconnect owned</p>
+        </div >
+        <div class="col-sm-3">
+        <img src="images/coffee.jpeg" alt="coffe-img" width="120" height="120">
+        <p>Unlimited coffee</p>
+
+       </div>
+      <div class="col-sm-3">
+       <img src="images/mail.jpeg" alt="mail-img" width="120" height="120">
+      <p class="ps-3"> Mail Service</p>
+
+     </div>
+     <div class="col-sm-3">
+        <pclass="">24-Hour Access</p>
+
+    </div>
+     </div>
+<div class="row pt-3 benefit-text ">
+   <div class="col-sm-3">
+      <p>Community</p>
+   </div>
+   <div class="col-sm-3" > 
+    <p>Conference Rooms</p>
+  </div>
+    <div class="col-sm-3">
+    <p>Insanely Fast Internet</p>
+    </div>
+    <div class="col-md-3">
+    <p>Group Events</p>
+  </div>
+</div>
+</div>
+
+<hr>
+
+<div class="our-members">
+  <div class="container text-white">
+<div class="row text-center">
+  <h2 class="think">WHAT OUR MEMBERS THINK ABOUT US</h2>
+  <div class="col-sm-4 pb-3">
+     <p class=""> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standa
+       rd dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type spec
+       imen book. It has survived not only five </p>
+        <h5>MICHAEL COL</h5>
+  </div>
+  <div class="col-sm-4 ">
+    <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standa
+      rd dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type spec
+      imen book. It has survived not only five</p>
+       <h6>DANE PICO</h5>
+  </div>
+  <div class="col-sm-4">
+    <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standa
+      rd dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type spec
+      imen book. It has survived not only five centuries, </p>
+       <h5>GEORGE WIRE</h5>
+  </div>
+</div>
+</div>
+</div>
+
+<hr>
+<div class="container">
+<div class="row">
+  <div class="col-sm-4">
+    <h2>DEVCONNECT COWORKING</h2>
+    <P>105 W Luis Ave, Suite #110</P>
+    <p>Phoenix, AZ 79004</p>
+    <p>602-202-0202</p>
+    <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+
+  </div>
+  <div class=" col-sm-2 svstack gap-1 col-offset-4">
+    <p>Services</p>
+    <a href="#membership">Memberships</a>
+    <a href="#suites">Suites</a>
+    <a href="#dropin">Drop In</a>
+
+  </div>
+  <div class="col-sm-2 vstack gap-1">
+    <p>Who We Are</p>
+    <a href="#">Community</a>
+    <a href="#">About Us</a>
+
+  </div>
+</div>
 </div>
 
 
@@ -148,12 +278,8 @@
 
 
 
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
 

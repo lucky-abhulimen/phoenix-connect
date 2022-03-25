@@ -1,3 +1,10 @@
+$primary-color: #789395;
+
+$primary-font: "Open Sans", sans-serif;
+
+h1 {
+}
+
 p {
   font-family: "Quicksand", sans-serif;
 }
@@ -17,7 +24,6 @@ hr {
 .container-padding {
   padding: 0 7%;
 }
-
 .membership {
   padding-bottom: 4%;
 }
@@ -29,13 +35,12 @@ hr {
 .top-img {
   padding: 0 11.3% 8%;
   border-top: 2px solid #789395;
-  background-color: #789395;
+  background-color: $primary-color;
 }
 
 .requestbtn:hover {
   color: black;
 }
-
 .co-working {
   position: relative;
   bottom: 400px;
@@ -52,15 +57,15 @@ hr {
   height: 330px;
 }
 
+.benefit-text {
+}
 .lockable-img {
   width: 100%;
   height: 98%;
 }
-
 .lockable-suite {
   margin: 15% auto;
 }
-
 .suites {
   position: absolute;
   top: 300%;
@@ -75,10 +80,11 @@ hr {
   padding: 150px 0;
   line-height: 2;
 }
-
 .think {
   padding: 60px 0;
 }
+
+// aboutus..html
 
 .about {
   position: relative;
@@ -91,9 +97,9 @@ hr {
   font-weight: bold;
 }
 
+// media queries
 @media screen and (max-width: 950px) {
   .suites {
     display: none;
   }
 }
-/*# sourceMappingURL=styles.css.map */

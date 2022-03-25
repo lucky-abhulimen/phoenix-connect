@@ -1,25 +1,251 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-     <!-- Required meta tags -->
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Devconnect:Coworking</title>
+  <title>Devconnect</title>
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@1,300&family=Open+S
+ans:wght@300&family=Quicksand:wght@500&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+
   <!-- font awesome  -->
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/b66e9dc93f.js" crossorigin="anonymous"></script>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+    <div class="container container-padding">
+      <a class="navbar-brand  fw-bold" href="index.html">PHOENIX CONNECT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#devConnect"
+        aria-controls="devConnect" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="devConnect">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html"><i
+                class="fa-solid fa-info fa-lg pe-1"></i>ABOUT</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#pricing"><i
+                class="fa-solid fa-file-invoice-dollar pe-1"></i>PRICING</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#cta"> <i class="fa-solid fa-rectangle-list pe-1"></i>EVENT
+              RENTALS</a> </li>
+          <li class="nav-item"><a class="nav-link" href="#footer"><i class="fa-solid fa-camera pe-1"></i>PHOTOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer"><i
+                class="fa-brands fa-blogger fa-lg pe-1"></i>BLOG</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-secondary border-1  btncustomize" href="#">REQUEST A
+              TOUR</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="top-div border-3">
+    <img class="" src="images/devco4.jpeg" alt="about-img" width="100%" height="450">
+    <div>
+      <h1 class="text-center text-white fw-bold about">ABOUT US</h1>
+    </div>
+  </div>
+
+  <div class="container ">
+    <h1 class="text-center">ABOUT THE DEVCONNECT</h1>
+    <P class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+      electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+      Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+      PageMaker including versions of <br> Lorem Ipsum.
+
+      Why do we use it?
+      It is a long established fact that a reader will be distracted by the readable content of a page when ing 'Content
+      here, content here', making it look like readable Many desktop publishing packages and web page editors now use
+      Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+      infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+      humour and the like).
+
+    </P>
+    <div class="text-center pt-1">
+      <a class=" btn btn-secondary fs-5   btncustomize requestbtn" data-bs-toggle="modal"
+        data-bs-target="#aboutModal">Request a Tour
+      </a>
+    </div>
+
+  </div>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="aboutModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-white  bg-info ">
+          <h5 class="modal-title " id="exampleModalLabel">Request a Tour</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <form>
+              <div class="row  mb-3">
+                <label class="col-sm-6 col-form-label" for="tourist">Number of Tourists</label>
+                <div class="col-sm-6">
+                  <select class="col-12 p-2" name="select" id="select" width="90px">
+                    <option value="select">select...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <label class="col-sm-6" for="date">Date</label>
+                <div class="col-sm-6">
+                  <input type="date" class="form-control p-2" name="date" id="date" placeholder="Date">
+                </div>
+              </div>
+              <div class="row mb-2">
+                <label class="col-sm-6" for="Name"><i class="fa-solid fa-address-card"></i>Name</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control p-2" name="name" id="date" placeholder=" Name">
+                </div>
+              </div>
+              <div class="row mb-2">
+                <label class="col-sm-6" id="tel" for="tel">Tel.</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control p-2" name="name" id="date" placeholder="Tel">
+                </div>
+              </div>
+              <div class="row mb-2">
+                <label class="col-sm-6" for="email">Email</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control p-2" name="email" id="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="row">
+                <label class="col-sm-6" for="Message">Message</label>
+                <div class="col-sm-6">
+                  <textarea name="textarea" id="textarea" cols="40" rows="10" class="form-control"></textarea>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="offset-6">
+                  <button class=" btn mt-2 bg-secondary " data-bs-dismiss="modal">Cancel</button>
+                  <button class="btn btn-primary text-white mt-2" data-bs-dismiss="modal" type="submit">SUBMIT</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="container text-center">
+    <img class="img-fluid img-thumbnail" src="images/coworking2.jpeg" alt="about-img" width="300" height="300">
+    <img class="pe-3 ps-3 img-fluid img-thumbnail" src="images/devco7.jpeg" alt="about-img" width="300" height="300">
+    <img class="img-fluid img-thumbnail" src="images/cowork.jpeg" alt="about-img" height="300" width="300">
+  </div>
+  <hr>
+
+  <div class="container">
+    <h2 class="text-center">DEVCONNECT HISTORY</h2>
+    <P class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the
+      industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a typ
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+      it to make a
+      typ</P>
+  </div>
+
+  <div class="text-center py-3">
+    <a class=" btn btn-secondary fs-5   btncustomize requestbtn" data-bs-toggle="modal"
+      data-bs-target="#aboutModal">Request a Tour
+    </a>
+  </div>
+
+  <hr>
+
+  <div class="container text-center py-3">
+    <div class="row">
+      <h1 class="py-3">Meet Our Team</h1>
+      <div class="col-md-6">
+        <img class="img-thumbnail img-fluid" src="images/devcoteam.jpeg" alt="devco">
+        <p>Brenda Morris <br> <em class="text-secondary">Operations Manager</em></p>
+
+      </div>
+      <div class="col-md-6">
+        <img class="img-thumbnail img-fluid" src="images/devco-team.jpeg" alt="team-img">
+        <p>Luis Denvine <br><em class="text-secondary">Community & Events Manager</em></p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <footer class="footer bg-warning pt-3 pb-3 border border-secondary">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2>DEVCONNECT COWORKING</h2>
+          <P>105 W Luis Ave, Suite #110</P>
+          <p>Phoenix, AZ 79004</p>
+          <p>602-202-0202</p>
+          <a href="#"><i class="fa-brands fa-instagram fa-xl pe-2"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+
+        </div>
+        <div class="col-sm-4">
+
+        </div>
+        <div class=" col-sm-2 svstack gap-1 col-offset-4 ">
+          <p>Services</p>
+          <a href="#membership">Memberships</a>
+          <a href="#suites">Suites</a>
+          <a href="#dropin">Drop In</a>
+
+        </div>
+        <div class="col-sm-2 vstack gap-1">
+          <p>Who We Are</p>
+          <a href="#">Community</a>
+          <a href="#">About Us</a>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
